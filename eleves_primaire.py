@@ -17,10 +17,10 @@ class eleve:
     def _changerDeSection(self,section):
         self._section=section
 
-    def _getSection(self):
+    def _getterSection(self):
         return self._section
 
-    def _setSection(self):
+    def _setterSection(self):
         self._section=section
 
     def _removeSection(self):
