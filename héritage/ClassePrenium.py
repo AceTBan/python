@@ -1,6 +1,6 @@
 from ClasseUser import *
 
-class Prenium:
+class Prenium(User):
     def __init__(self, nom, mdp):
         super().__init__(nom, mdp)
         self.Emprunt=0

@@ -14,6 +14,6 @@ class User:
         self.CompteBanquaire.Afficher()
 
 
-utilisateur = User("ACE", "yuiop")
-utilisateur.CreerCompte(159)
-utilisateur.AfficherInformations()
+# utilisateur = User("ACE", "yuiop")
+# utilisateur.CreerCompte(159)
+# utilisateur.AfficherInformations()
