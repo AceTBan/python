@@ -16,8 +16,7 @@ while True:
             mdp = input("Saissiez votre Mot De Passe:\n")
             vip = Prenium(nom, mdp)
             vip.CreerCompte(int(input("Combien souhaitez-vous déposer sur le compte?\n")))
-            vip.append(utilisateur)
-            vip.afficherInformations()
+            inscrits.append(vip)
 #creation d'un compte classique
         elif choix == "n":
             nom = input("Saissiez votre NOM d'utilisateur:\n")
@@ -25,21 +24,13 @@ while True:
             utilisateur = User(nom, mdp)
             utilisateur.CreerCompte(int(input("Combien souhaitez-vous déposer sur le compte?\n")))
             inscrits.append(utilisateur)
-            utilisateur.afficherInformations()
 
-    #     else:
-    #         print("Entrée incorrecte, redémarrage du programme")
-    # elif choix == "quit":
-    #     break
-    # else:
-    #     print("Entrée incorrecte, redémarrage du programme")
-    
 # utilisateur déjà inscrit
 # vérifier si le nom & le mdp est déjà présent dans la liste inscrits
 
     elif choix == "n":
         
-        nom = input("Veuiilez entrez votre nom d'utilisateur\n")
+        nom = input("Bonjours chère client veuiilez entrez votre nom d'utilisateur\n")
         mdp = input("Veuillez entrez le mot de passe\n")
         for i in inscrits:
             if i.nom == nom and i.mdp == mdp:
@@ -65,3 +56,10 @@ while True:
                         print("Au revoir")
                         break
                     
+        else:
+            print("Entrée incorrecte, redémarrage du programme")
+    elif choix == "quit":
+        break
+    else:
+        print("Entrée incorrecte, redémarrage du programme")
+    
